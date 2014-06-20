@@ -1,0 +1,43 @@
+<!-- This is a page for simulating Risk attack and defense (1-3 attack dice, 1-2 defense dice, match highest of each) -->
+<html>
+<head>
+<title>Risk Dice</title>
+
+<script src="RiskDice.js"></script>
+<style>
+f1 {
+    font-size: 200px;
+}
+</style>
+</head>
+
+<body>
+<h2> Risk Attack/Defense Generator </h2>
+
+Select the number of dice to roll for attack and defense, then click "Attack".<br><br>
+
+<table border=1>
+<tr>
+    <th>Attack Dice &nbsp &nbsp  </th>
+    <th>Defense Dice &nbsp &nbsp </th>
+</tr>
+<tr>
+    <td><input type="RADIO" name="attackDice" id="ad1" value="1"> 1 <br>
+        <input type="RADIO" name="attackDice" id="ad2" value="2"> 2 <br>
+        <input type="RADIO" name="attackDice" id="ad3" value="3"> 3 <br>
+    </td>
+    <td><input type="RADIO" name="defenseDice" id="dd1" value="1"> 1 <br>
+        <input type="RADIO" name="defenseDice" id="dd2" value="2"> 2 <br><br>
+    </td>
+</tr>
+</table>
+<br>
+
+<button type="button" id="Attack" onclick="RiskDice()">Attack</button> <br>
+<br>
+
+<div id="Result"> <!-- result goes here. --> </div>
+
+</body>
+
+</html>
